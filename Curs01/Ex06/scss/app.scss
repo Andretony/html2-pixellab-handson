@@ -70,3 +70,7 @@
 .circle-blue {
   @include circle-bg(blue);
 }
+
+.circle-border-blue {
+  @include circle;
+}
