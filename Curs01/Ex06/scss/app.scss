@@ -5,6 +5,27 @@
   background-color: turquoise;
 }
 
+@mixin circle {
+  width: 200px;
+  height: 200px;
+  border: 3px solid red;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+@mixin circle-bg($color: red) {
+  background-color: $color;
+}
+
 @mixin square-bg($color: turquoise) {
   background-color: $color;
 }
@@ -32,4 +53,20 @@
 
 .square-purple {
   @include square-bg(purple);
+}
+
+.circle {
+  @include circle;
+}
+
+.circle-red {
+  @include circle-bg(red);
+}
+
+.circle-green {
+  @include circle-bg(green);
+}
+
+.circle-blue {
+  @include circle-bg(blue);
 }

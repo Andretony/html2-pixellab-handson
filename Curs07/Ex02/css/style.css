@@ -27,3 +27,33 @@
 }
 
 /* punctul 2 */
+
+@keyframes box-2 {
+  20% {
+    /*  translate x,y  */
+
+    transform: translate(0,calc(100vh - 200px));
+  }
+
+  40% {
+    transform: translate(calc(100vw - 200px) ,calc(100vh - 200px));
+  }
+
+  60%{
+    transform: translate(calc(100vw - 200px), 0);
+  }
+  80%{
+   transform: translate(0,calc(100vh - 200px));
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+.box-2 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: box-2 4s ease-out;
+}
