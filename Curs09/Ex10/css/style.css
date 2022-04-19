@@ -39,7 +39,7 @@
 /* do not touch this */
 
 .flex-container-01 {
-  flex-direction: column-reverse;
+  flex-direction: row-reverse;
 }
 
 .flex-container-01 div:nth-of-type(2){

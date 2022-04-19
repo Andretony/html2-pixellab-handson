@@ -46,3 +46,13 @@
   justify-self: end;
   align-self: center;
 }
+
+.grid-item-4 {
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.grid-item-5 {
+  justify-self: flex-start;
+  align-self: flex-end;
+}
