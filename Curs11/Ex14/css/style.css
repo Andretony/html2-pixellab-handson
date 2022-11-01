@@ -18,20 +18,22 @@
 }
 
 .grid-item-4 {
-  background-color: lightsalmon
+  background-color: lightsalmon;
 }
 
 /* can't touch this 🔨 */
 
 .grid-container {
+  grid-template-rows: repeat(4, 200px);
   display: grid;
   max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
   grid-template-areas:
-    "header"
-    "content"
-    "sidebar"
-    "footer";
+    'header'
+    'content'
+    'sidebar'
+    'footer';
 }
 
 .grid-item-1 {
@@ -42,7 +44,7 @@
   grid-area: content;
 }
 
-.grid-area-3 {
+.grid-item-3 {
   grid-area: sidebar;
 }
 
@@ -50,21 +52,22 @@
   grid-area: footer;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 521px) {
   .grid-container {
     grid-template-areas:
-    "header header header"
-    "sidebar . content"
-    "footer footer footer";
-    grid-template-columns: 320px 25px 1fr
+      'header'
+      'sidebar'
+      'content'
+      'footer';
   }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 769px) {
   .grid-container {
+    grid-template-columns: 320px 25px 1fr;
     grid-template-areas:
-    "header header header"
-    "content . sidebar"
-    "footer footer footer";
+      'header header header'
+      'sidebar . content'
+      'footer footer footer';
   }
 }
